@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Hedy",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.hedy",
+				"match": "\\b(if|else|for|ask|echo|print|is|at|random|repeat|times)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.single.hedy",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.hedy",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.hedy"
+}

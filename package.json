@@ -1,0 +1,36 @@
+{
+    "name": "hedy",
+    "displayName": "Hedy",
+    "description": "Hedy is a gradual programming language aimed at teaching programming and teaching Python. It teaches using different levels. The first level just offers printing text and asking for input. This level is meant to introduce learners to the idea of a programming language, and the environment. From there, Hedy builds up to include more complex syntax and additional concepts.",
+    "version": "1.0.0",
+    "icon": "images/icon.png",
+    "engines": {
+        "vscode": "^1.53.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "hedy",
+            "aliases": ["Hedy", "hedy"],
+            "extensions": [".hedy"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "hedy",
+            "scopeName": "source.hedy",
+            "path": "./syntaxes/hedy.tmLanguage.json"
+        }]
+    },
+    "author": {
+        "name": "SvenDeveloper",
+        "email": "jensen.sven19@gmail.com",
+        "url": "https://github.com/Sven-Developer/hedy-vscode-syntax"
+    },
+    "publisher": "publishingid",
+    "repository": {
+        "url": "https://github.com/Sven-Developer/hedy-vscode-syntax",
+        "type": "git"
+    }
+}
